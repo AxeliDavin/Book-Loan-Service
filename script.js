@@ -1,6 +1,6 @@
 // API base URL
 // const API_BASE_URL = 'http://kelas-king.site:9000';
-const API_BASE_URL = 'http://localhost:9000';
+const API_BASE_URL = 'http://kelas-king.site:9000';
 
 // DOM Elements
 const authForm = document.getElementById('auth-form');
