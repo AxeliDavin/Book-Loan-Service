@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="notification" class="notification" style="display: none;"></div>
+        <div id="auth-section">
+            <h2>Login / Register</h2>
+            <form id="auth-form">
+                <input type="text" id="username" placeholder="Username" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" id="login-btn">Login</button>
+                <button type="button" id="register-btn">Register</button>
+            </form>
+        </div>
+
+        <div id="main-section" style="display: none;">
+            <h2>Welcome, <span id="user-welcome"></span>!</h2>
+            <button id="logout-btn">Logout</button>
+            <button id="delete-account-btn">Delete Account</button>
+
+            <div id="books-section">
+                <h3>Available Books</h3>
+                <table id="books-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div id="loans-section">
+                <h3>Your Loans</h3>
+                <table id="loans-table">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Loan Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
